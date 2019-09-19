@@ -11,7 +11,7 @@ public class lotteryTicketNumbers {
 		for(int i = 0; i < 5; i++)
 		{
 		int randomNumber = ran.nextInt((99 - 1)+1)+1;
-		s = s+randomNumber;
+		s = s+ randomNumber + " ";
 		}
 		JOptionPane.showMessageDialog(null, s);
 	}
