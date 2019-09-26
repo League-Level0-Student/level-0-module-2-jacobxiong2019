@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+
+public class voting_Booth {
+	public static void main(String[] args) {
+		String age = JOptionPane.showInputDialog("How old are you?");
+		int i = Integer.parseInt(age);
+		if(i <= 18) {
+			JOptionPane.showInputDialog( "You are old enough to vote. Who do you think will be next president?");
+		}
+		else if(i > 18) {
+			JOptionPane.showMessageDialog(null, "You are not old enough to vote.");
+		}
+	}
+}
