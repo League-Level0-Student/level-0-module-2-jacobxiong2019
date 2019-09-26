@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+
+public class Rollercoaster {
+	public static void main(String[] args) {
+		String Rollercoaster = JOptionPane.showInputDialog("Do you want to ride a rollercoaster?");
+		{
+			if(Rollercoaster.equalsIgnoreCase("yes")) 
+			{
+				String height = JOptionPane.showInputDialog("What is your height in inches?");
+					int i = Integer.parseInt(height);
+					if(i > 48)
+					{
+							JOptionPane.showMessageDialog(null, "You can ride of the rollercoaster! Have fun!");
+					}
+						else if(i < 48)
+						{
+							JOptionPane.showMessageDialog(null, "Sorry, you're not tall enough.");
+						}
+				
+			}
+			else if(Rollercoaster.equalsIgnoreCase("no"))
+			{
+				JOptionPane.showMessageDialog(null, "Oh well. You'll miss out on the fun.");
+			}
+		}
+	}
+}
